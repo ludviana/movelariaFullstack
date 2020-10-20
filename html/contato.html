@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Contato</title>
+        <link rel="stylesheet" type="text/css" href="../css/estilocorpo.css">
+        <link rel="stylesheet" href="../css/estilocontato.css">
+
+    </head>
+
+    <body >
+
+        <!--Menu-->
+        <nav class="menu">
+            <a href="index.html" class="um">Pagina inicial</a>
+            <a href="produtos.html" class="dois">Produtos</a>
+            <a href="sobre.html" class="tres">Sobre</a>
+            <a href="#" class="quatro">Contato</a>
+        </nav>
+        <!--Fim do menu-->
+        
+    <hr>
+        
+        <!--informaçoes de contato-->
+        <section class="contato">
+            <figure>
+                <img src="../armarios/email2.png" id="email">
+
+                <figcaption>
+                    <h3> email@fullstack.com</h3>
+                </figcaption>
+            </figure>
+        
+            <figure>
+                <img src="../armarios/whats.png" id="whats">
+
+                <figcaption>
+                    <h3 class="numero">(11)1111-2222</h3>
+                </figcaption>
+            </figure> 
+        </section>
+        <!--Fim informaçoes de contato-->
+
+
+        <!--formulario-->
+        <main class="formulario">
+            <h2>Fale conosco</h2>
+            
+            <form action="http://www.foo.com" method="GET" autocomplete="off">
+                <table>              
+                    <tr>
+                        <th>
+                            <label for="nome">Nome: </label>
+                        </th>
+                        <td>
+                            <input type="text" name="nome" id="nome" placeholder="Seu nome" class="larg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="genero">Genero:</label>
+                        </th>
+                        <td >
+                            <input type="radio" name="genero" id="genero">Feminino
+                        
+                            <input type="radio" name="genero" id="genero">Masculino
+                        
+                            <input type="radio" name="genero" id="genero">Outro
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="emaile">Email: </label>
+                        </th>
+                        <td>
+                            <input type="email" name="emaile" id="emaile" placeholder="email@fullstack.com" class="larg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="telefone">Telefone: </label>
+                        </th>
+                        <td>
+                            <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000" class="larg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="tipomensagem">Tipo:</label>
+                        </th>
+                        <td>
+                            <select name="tipomensagem" id="tipomensagem" class="largo">
+                                <option value="">Selecione um tipo de mensagem</option>
+                                <option value="Elogio">Elogio</option>
+                                <option value="Informação"> Informação</option>
+                                <option value="Reclamação">Reclamação</option>
+                                <option value="Sugestão">Sugestão</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="mensagem">Mensagem: </label>
+                        </th>
+                        <td>
+                            <textarea name="mensagem" id="mensagem" placeholder=" Deixe-nos sua mensagem aqui"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" class="botao">
+                            <input type="submit" value="Enviar">
+                        </th>
+                    </tr>
+                </table>
+            </form>
+        </main>
+        <!--fim formulario-->
+
+        
+        <!--rodape-->
+        <footer class="rodape">
+            <div class="info">
+                <div  class="Icontato">
+                    <p class="b">Contato</p>
+                    <div>
+                        <img src="../armarios/email2.png" id="email">
+                        <p>email@fullstack.com</p>
+                    </div>
+                    <div>
+                        <img src="../armarios/whats.png"  id="whats">
+                        <p>(11)1111-2222</p>
+                    </div>
+                </div>
+
+                <div class="Icontato">     
+                    <p class="b">Lojas</p>  
+                    <p> Rua das Acacias,1993 - Jardim Novo Mundo - SP</p>
+
+                    <p>Rua Pau Brasil,1993 - Jardim Horizonte - MT</p>
+                </div>
+
+                <div class="Icontato" >
+                    <p class="b">Horarios</p>
+                    <p> Horario de funcionamento: Das 8:00 às 18:00hrs.</p>
+                                        
+                    <p>Finais de semana: Das 10:00 às 17:00hrs</p>
+                </div>
+            </div>
+        </footer>
+        <!--Fim do rodape-->
+
+
+        <!--Nome do aluno-->            
+        <section class="criado">
+            <h3>Site Criado por</h3>
+            <h2>Lucas Damasceno Viana Alves - SPM </h2>
+        </section>
+    </body>
+</html>

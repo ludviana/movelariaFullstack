@@ -1,0 +1,20 @@
+.menu .tres{
+    color: black;
+    font-size: 25px;
+}
+
+table, td,th,tr {
+    border: 1px solid white;
+}
+
+table th{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+table p{
+    
+    padding: 18px;
+    text-align: justify;
+}

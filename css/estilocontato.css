@@ -1,0 +1,77 @@
+.menu .quatro{
+    color: black;
+    font-size: 25px;
+}
+
+.contato{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contato figure{
+    width:50%;
+}
+
+.numero{
+    padding-left: 0px;
+    margin-left: -40px;
+}
+
+.formulario{
+    
+    margin: auto;
+    align-items: center;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    border-radius: 30px;
+    padding-bottom: 15px;
+    
+}
+
+
+.formulario h2{
+    padding: 2px 10px 2px 10px;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.596);
+    width: max-content;
+}
+
+textarea{
+    width:250px ;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.larg{
+    width: 238px;
+}
+
+.largo{
+    width: 256px;
+}
+
+.botao{
+    padding-top: 15px;
+    text-align: center;
+    
+}
+
+
+table{
+    width: 100%;
+}
+
+table th{
+    text-align: justify;
+    
+
+}
+
+table th,td{
+    padding-top: 10px;
+}
