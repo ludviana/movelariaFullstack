@@ -32,7 +32,7 @@ create table if not exists pedidos(
 idPedido int primary key not null auto_increment,
 nomeCliente varchar(200),
 endereco varchar(200),
-telefone int,
+telefone bigint(15),
 nomeProduto varchar(100),
 valorUnitario decimal(8,2),
 quantidade int
