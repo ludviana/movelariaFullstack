@@ -1,5 +1,7 @@
 const product = window.document.getElementsByClassName("produto");
 const categorias = window.document.getElementsByClassName("categorias")
+let botaocompra = window.document.getElementsByClassName("botao");
+
 
 // seleciona os produtos por categoria
 function categ(categoria){
@@ -20,6 +22,23 @@ function todos(){
     }
 };
 
+
+
+function mudacor(){
+    
+    console.log("entrei")
+    botaocompra.style = "display:none";
+}
+
+function voltacor(){
+    
+    console.log("sai")
+    
+}
+
+
+/*
+Primeira forma de Menu dinamico da minha vida 
 
 
 // coleta todos os arrays
@@ -62,3 +81,4 @@ categorias[3].innerText += `Painel de TV (${painelTV.length })`;
 categorias[4].innerText += `Armario Alto( ${armarioAlto.length })`;
 categorias[5].innerText += `Armario pequeno (${armarioPequeno.length })`;
 
+*/

@@ -1,24 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-    <head>
-        
-        <meta charset="UTF-8">
-        <title>Contato</title>
-        <link rel="stylesheet" type="text/css" href="../css/estilocorpo.css">
+<?php include_once('../includes/head.php') ?>
         <link rel="stylesheet" href="../css/estilocontato.css">
-
+        <title>Contato</title>
     </head>
 
     <body >
 
         <!--Menu-->
-        <nav class="menu">
-            <a href="index.html" class="um">Pagina inicial</a>
-            <a href="produtos.html" class="dois">Produtos</a>
-            <a href="sobre.html" class="tres">Sobre</a>
-            <a href="#" class="quatro">Contato</a>
-        </nav>
+<?php include_once('../includes/menu.php')?>
         <!--Fim do menu-->
         
     <hr>
@@ -48,7 +36,7 @@
         <main class="formulario">
             <h2>Fale conosco</h2>
             
-            <form action="http://www.foo.com" method="GET" autocomplete="off">
+            <form action="" method="GET" autocomplete="off">
                 <table>              
                     <tr>
                         <th>
@@ -120,42 +108,4 @@
 
         
         <!--rodape-->
-        <footer class="rodape">
-            <div class="info">
-                <div  class="Icontato">
-                    <p class="b">Contato</p>
-                    <div>
-                        <img src="../armarios/email2.png" id="email">
-                        <p>email@fullstack.com</p>
-                    </div>
-                    <div>
-                        <img src="../armarios/whats.png"  id="whats">
-                        <p>(11)1111-2222</p>
-                    </div>
-                </div>
-
-                <div class="Icontato">     
-                    <p class="b">Lojas</p>  
-                    <p> Rua das Acacias,1993 - Jardim Novo Mundo - SP</p>
-
-                    <p>Rua Pau Brasil,1993 - Jardim Horizonte - MT</p>
-                </div>
-
-                <div class="Icontato" >
-                    <p class="b">Horarios</p>
-                    <p> Horario de funcionamento: Das 8:00 às 18:00hrs.</p>
-                                        
-                    <p>Finais de semana: Das 10:00 às 17:00hrs</p>
-                </div>
-            </div>
-        </footer>
-        <!--Fim do rodape-->
-
-
-        <!--Nome do aluno-->            
-        <section class="criado">
-            <h3>Site Criado por</h3>
-            <h2>Lucas Damasceno Viana Alves - SPM </h2>
-        </section>
-    </body>
-</html>
+        <?php include_once('../includes/footer.php') ?>
