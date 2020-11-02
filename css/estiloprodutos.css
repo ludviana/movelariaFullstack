@@ -24,6 +24,7 @@
 .lateral ul li{
     list-style: none;
     padding-bottom: 5px;
+    color:white;
     cursor: pointer;
 }
 
@@ -31,6 +32,9 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    
+    
+
 }
 
 .produto{
@@ -60,6 +64,7 @@
 .vermelho{
     color: red;
     font-size: 20px;
+    margin: 8px;
     
 }
 
@@ -80,3 +85,19 @@
     border-radius: 15px;
 }
 
+.botao{
+    background-color:rgba(128, 128, 128, 0.596) ;
+    width: 150px;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.botao a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 40px;
+}

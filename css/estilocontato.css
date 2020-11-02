@@ -75,3 +75,11 @@ table th{
 table th,td{
     padding-top: 10px;
 }
+
+
+
+.comentarios{
+    box-sizing: border-box;
+    width: 200px;
+    border: 1px solid rgba(128, 128, 128, 0.596);
+}

@@ -1,8 +1,9 @@
-<?php include_once('../includes/head.php');
-    
-?>        
-        <link rel="stylesheet" type="text/css" href="../css/estiloprodutos.css">
+    <?php include_once('../includes/head.php');
+        
+    ?>  
         <script src="../js/produtos.js" async></script>
+        <link rel="stylesheet" type="text/css" href="../css/estiloprodutos.css">
+        
         <title>Produtos</title>
     </head>
     
@@ -15,7 +16,7 @@
     
     <?php 
         require_once('../conexoes/conexao.php');
-        
+
         $sql_select = "SELECT * FROM produtos;";               
         $licacao = mysqli_query($conexao,$sql_select);
     ?>
@@ -34,7 +35,7 @@ imagem varchar(300)
             $preco = [];
             $imagem = [];
             $categoria = [];
-
+            $idproduto = [];
 
             while($row = mysqli_fetch_assoc($licacao)){
                 $num++;
@@ -43,6 +44,7 @@ imagem varchar(300)
                 array_push($preco,$row['preco']);
                 array_push($imagem,$row['imagem']);
                 array_push($categoria,$row['categoria']);
+                array_push($idproduto,$row['idProduto']);
             }
 
             
@@ -97,9 +99,9 @@ imagem varchar(300)
                     </figure>
                     <p> <?php echo $descricao[$conta]?></p>
                     <hr>
-                    <p class="vermelho">R$<?php echo $preco[$conta] ?></p>
+                    <p class="vermelho">R$ <?php echo $preco[$conta] ?></p>
 
-                    <button class="botao" onmouseover="mudacor()" onmouseout="voltacor()"><a href="../html/teste.html">Comprar</a></button>
+                    <button class="botao" onmouseover="entrei()" onmouseout="sai()"><a href="../html/comprar.php?produto=<?php echo $idproduto[$conta]?>">Comprar</a></button>
 
                 </div>
 

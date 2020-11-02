@@ -1,6 +1,5 @@
 const product = window.document.getElementsByClassName("produto");
 const categorias = window.document.getElementsByClassName("categorias")
-let botaocompra = window.document.getElementsByClassName("botao");
 
 
 // seleciona os produtos por categoria
@@ -24,16 +23,12 @@ function todos(){
 
 
 
-function mudacor(){
-    
+function entrei(){
     console.log("entrei")
-    botaocompra.style = "display:none";
 }
 
-function voltacor(){
-    
-    console.log("sai")
-    
+function sai(){
+    console.log("sai")  
 }
 
 

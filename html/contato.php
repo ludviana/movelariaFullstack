@@ -31,12 +31,13 @@
         </section>
         <!--Fim informaçoes de contato-->
 
+<?php require_once('../conexoes/conexao.php');?>
 
         <!--formulario-->
         <main class="formulario">
             <h2>Fale conosco</h2>
             
-            <form action="" method="GET" autocomplete="off">
+            <form action="../conexoes/conexao.php" method="post">
                 <table>              
                     <tr>
                         <th>
@@ -51,11 +52,11 @@
                             <label for="genero">Genero:</label>
                         </th>
                         <td >
-                            <input type="radio" name="genero" id="genero">Feminino
+                            <input type="radio" name="genero" id="genero" value="Feminino">Feminino
                         
-                            <input type="radio" name="genero" id="genero">Masculino
+                            <input type="radio" name="genero" id="genero" value="Masculino">Masculino
                         
-                            <input type="radio" name="genero" id="genero">Outro
+                            <input type="radio" name="genero" id="genero" value="Outro">Outro
                         </td>
                     </tr>
                     <tr>
@@ -105,7 +106,43 @@
             </form>
         </main>
         <!--fim formulario-->
+<hr>
+        <section class="comentarios">
+            <table>
+                <tr>
+                    <th>N°msg</th>
+                    <th>Nome Cliente</th>
+                    <th>Tipo de msg</th>
+                    <th>Mensagem</th>
+                    
+                </tr>
 
+
+<?php 
+        
+            $sql_select = "SELECT * FROM comentarios;";
+
+            $res = mysqli_query($conexao,$sql_select);
+            if($res){
+                while($row = mysqli_fetch_assoc($res)){
+              
+?>
+        
+                <tr>
+                    <td><?php echo $row['id_comentarios']?></td>
+                    <td><?php echo $row['nome']?></td>
+                    <td><?php echo $row['tipo']?></td>
+                    <td><?php echo $row['mensagem']?></td>
+                </tr>
+            
+<?php     
+
+                }
+            }  
+?>
+</table>
+
+</section>
         
         <!--rodape-->
         <?php include_once('../includes/footer.php') ?>
