@@ -90,7 +90,7 @@
                             <label for="qts">Qts:</label>
                         </td>
                         <td>
-                            <input type="number" name="qts" id="qts" min="1" value="1"> 
+                            <input type="number" name="qts" id="qts" min="1" value="1" maxlength="2"> 
                         </td>
                     </tr>
                 </table>
