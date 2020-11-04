@@ -101,7 +101,7 @@ imagem varchar(300)
                     <hr>
                     <p class="vermelho">R$ <?php echo $preco[$conta] ?></p>
 
-                    <button class="botao" onmouseover="entrei()" onmouseout="sai()"><a href="../html/comprar.php?produto=<?php echo $idproduto[$conta]?>">Comprar</a></button>
+                    <button class="btn btn-primary mb-3 " onmouseover="entrei()" onmouseout="sai()"><a class="text-white" href="../html/comprar.php?produto=<?php echo $idproduto[$conta]?>">Comprar</a></button>
 
                 </div>
 

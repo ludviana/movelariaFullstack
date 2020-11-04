@@ -37,15 +37,3 @@ form{
     margin-top: 100px;
 }
 
-.botao{
-    background-color:rgba(128, 128, 128, 0.596) ;
-    width: 150px;
-    height: 35px;
-    margin-top: 80px;
-    margin-bottom: 20px;
-    border-radius: 30px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    text-align: center;
-    color: white;
-}

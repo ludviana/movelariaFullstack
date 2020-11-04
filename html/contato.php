@@ -1,5 +1,4 @@
 <?php include_once('../includes/head.php') ?>
-        <link rel="stylesheet" href="../css/estilocontato.css">
         <title>Contato</title>
     </head>
 
@@ -8,113 +7,112 @@
         <!--Menu-->
 <?php include_once('../includes/menu.php')?>
         <!--Fim do menu-->
-        
-    <hr>
-        
+    <div class="container-fluid text-center">
         <!--informaçoes de contato-->
-        <section class="contato">
-            <figure>
-                <img src="../armarios/email2.png" id="email">
+        <section class="d-flex  mb-5">
+            <div class="col-6">
+                <figure>
+                    <img src="../armarios/email2.png" width="40px">
 
-                <figcaption>
-                    <h3> email@fullstack.com</h3>
-                </figcaption>
-            </figure>
-        
-            <figure>
-                <img src="../armarios/whats.png" id="whats">
+                    <figcaption>
+                        <h3> email@fullstack.com</h3>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-6">
+                <figure>
+                    <img src="../armarios/whats.png" width="40px">
 
-                <figcaption>
-                    <h3 class="numero">(11)1111-2222</h3>
-                </figcaption>
-            </figure> 
+                    <figcaption>
+                        <h3 class="numero">(11)1111-2222</h3>
+                    </figcaption>
+                </figure> 
+            </div>
         </section>
         <!--Fim informaçoes de contato-->
 
 <?php require_once('../conexoes/conexao.php');?>
 
         <!--formulario-->
-        <main class="formulario">
-            <h2>Fale conosco</h2>
-            
-            <form action="../conexoes/conexao.php" method="post">
-                <table>              
-                    <tr>
-                        <th>
-                            <label for="nome">Nome: </label>
-                        </th>
-                        <td>
-                            <input type="text" name="nome" id="nome" placeholder="Seu nome" class="larg">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="genero">Genero:</label>
-                        </th>
-                        <td >
-                            <input type="radio" name="genero" id="genero" value="Feminino">Feminino
-                        
-                            <input type="radio" name="genero" id="genero" value="Masculino">Masculino
-                        
-                            <input type="radio" name="genero" id="genero" value="Outro">Outro
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
+        <div>
+            <main>
+                <h2>Fale conosco</h2>
+                
+                    <form action="../conexoes/conexao.php" method="post" >
+                    
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nome" >Nome:</label>
+                                <input type="text" name="nome" id="nome" placeholder="Seu nome" class="form-control">
+                        </div>    
+                        <div class="form-group col-md-6">
                             <label for="emaile">Email: </label>
-                        </th>
-                        <td>
-                            <input type="email" name="emaile" id="emaile" placeholder="email@fullstack.com" class="larg">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="telefone">Telefone: </label>
-                        </th>
-                        <td>
-                            <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000" class="larg">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="tipomensagem">Tipo:</label>
-                        </th>
-                        <td>
-                            <select name="tipomensagem" id="tipomensagem" class="largo">
-                                <option value="">Selecione um tipo de mensagem</option>
+                                <input type="email" name="emaile" id="emaile" placeholder="email@fullstack.com" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <legend class="col-form-label ">Genero:</legend>
+                        
+                            <input type="radio" name="genero" id="genero" value="Feminino" >
+                                <label for="genero">
+                                    Feminino
+                                </label>
+                
+                            <input type="radio" name="genero" id="genero" value="Masculino" >
+                                <label  for="genero">
+                                    Masculino
+                                </label>        
+                        
+                            <input type="radio" name="genero" id="genero" value="Outro" >
+                                <label for="genero">
+                                    Outro
+                                </label>
+                                
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="telefone" class="col-form-label">Telefone: </label>
+                                <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000" class=" form-control">
+                        </div>
+                    </div>    
+                           
+                    
+                        <div class="form-group">
+                            <label class=" col-form-label" for="tipomensagem">Tipo de mensagem: </label>
+                            <select name="tipomensagem" id="tipomensagem" class="form-control">
+                                <option value=""> </option>
                                 <option value="Elogio">Elogio</option>
                                 <option value="Informação"> Informação</option>
                                 <option value="Reclamação">Reclamação</option>
                                 <option value="Sugestão">Sugestão</option>
                             </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
+                        </div>
+                    
+                        <div class="form-group">
                             <label for="mensagem">Mensagem: </label>
-                        </th>
-                        <td>
-                            <textarea name="mensagem" id="mensagem" placeholder=" Deixe-nos sua mensagem aqui"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th colspan="2" class="botao">
-                            <input type="submit" value="Enviar">
-                        </th>
-                    </tr>
-                </table>
-            </form>
-        </main>
+                                <textarea class="form-control" name="mensagem" id="mensagem" placeholder=" Deixe-nos sua mensagem aqui"></textarea>
+                        </div>
+                    
+                    
+                        <div>
+                            <input class="btn btn-primary" type="submit" value="Enviar"> 
+                        </div>
+
+                    </form>
+                </div>
+            </main>
+        </div>
         <!--fim formulario-->
 <hr>
-        <section class="comentarios">
+        <section class="table table-striped table-borderless">
             <table>
                 <tr>
-                    <th>N°msg</th>
-                    <th>Nome Cliente</th>
-                    <th>Tipo de msg</th>
-                    <th>Mensagem</th>
-                    
+                    <th scope="col">N°msg</th>
+                    <th scope="col">Nome Cliente</th>
+                    <th scope="col">Tipo de msg</th>
+                    <th scope="col">Mensagem</th>
                 </tr>
 
 
@@ -140,9 +138,9 @@
                 }
             }  
 ?>
-</table>
+            </table>
 
-</section>
+        </section>
         
         <!--rodape-->
         <?php include_once('../includes/footer.php') ?>

@@ -98,7 +98,7 @@
                 <input type="hidden" name="valorProd" value="<?php echo $preco[0]?>">
                 
 
-                <button class="botao" type="submit">Finalizar compra</button>
+                <button class="btn btn-outline-success mt-5" type="submit">Finalizar compra</button>
             </form>
         </div>
     </div>
